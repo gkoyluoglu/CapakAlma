@@ -31,77 +31,19 @@ namespace CapakAlma
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.defineToolPageButton = new System.Windows.Forms.Button();
-            this.mainPageButton = new System.Windows.Forms.Button();
-            this.closeButton = new System.Windows.Forms.Button();
             this.customTabControl1 = new CapakAlma.CostumComponents.CustomTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.mainPage1 = new CapakAlma.Panels.MainPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.defineToolPageButton = new System.Windows.Forms.Button();
+            this.mainPageButton = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.customTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.customTabControl1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1904, 1041);
-            this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel2.Controls.Add(this.defineToolPageButton);
-            this.panel2.Controls.Add(this.mainPageButton);
-            this.panel2.Controls.Add(this.closeButton);
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1904, 42);
-            this.panel2.TabIndex = 1;
-            // 
-            // defineToolPageButton
-            // 
-            this.defineToolPageButton.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.defineToolPageButton.Location = new System.Drawing.Point(115, 0);
-            this.defineToolPageButton.Name = "defineToolPageButton";
-            this.defineToolPageButton.Size = new System.Drawing.Size(109, 42);
-            this.defineToolPageButton.TabIndex = 2;
-            this.defineToolPageButton.Text = "Define Tool Page";
-            this.defineToolPageButton.UseVisualStyleBackColor = false;
-            this.defineToolPageButton.Click += new System.EventHandler(this.defineToolPageButton_Click);
-            // 
-            // mainPageButton
-            // 
-            this.mainPageButton.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.mainPageButton.Location = new System.Drawing.Point(0, 0);
-            this.mainPageButton.Name = "mainPageButton";
-            this.mainPageButton.Size = new System.Drawing.Size(109, 42);
-            this.mainPageButton.TabIndex = 1;
-            this.mainPageButton.Text = "Main Page";
-            this.mainPageButton.UseVisualStyleBackColor = false;
-            this.mainPageButton.Click += new System.EventHandler(this.mainPageButton_Click);
-            this.mainPageButton.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPageButton_Paint);
-            // 
-            // closeButton
-            // 
-            this.closeButton.BackColor = System.Drawing.Color.Brown;
-            this.closeButton.FlatAppearance.BorderColor = System.Drawing.Color.Brown;
-            this.closeButton.Location = new System.Drawing.Point(1858, 0);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(46, 42);
-            this.closeButton.TabIndex = 0;
-            this.closeButton.Text = "X";
-            this.closeButton.UseVisualStyleBackColor = false;
-            this.closeButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // customTabControl1
             // 
@@ -144,6 +86,50 @@ namespace CapakAlma
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.Controls.Add(this.defineToolPageButton);
+            this.panel2.Controls.Add(this.mainPageButton);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1904, 42);
+            this.panel2.TabIndex = 1;
+            // 
+            // defineToolPageButton
+            // 
+            this.defineToolPageButton.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.defineToolPageButton.Location = new System.Drawing.Point(149, 0);
+            this.defineToolPageButton.Name = "defineToolPageButton";
+            this.defineToolPageButton.Size = new System.Drawing.Size(109, 42);
+            this.defineToolPageButton.TabIndex = 2;
+            this.defineToolPageButton.Text = "Define Tool Page";
+            this.defineToolPageButton.UseVisualStyleBackColor = false;
+            this.defineToolPageButton.Click += new System.EventHandler(this.defineToolPageButton_Click);
+            // 
+            // mainPageButton
+            // 
+            this.mainPageButton.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.mainPageButton.Location = new System.Drawing.Point(22, 0);
+            this.mainPageButton.Name = "mainPageButton";
+            this.mainPageButton.Size = new System.Drawing.Size(109, 42);
+            this.mainPageButton.TabIndex = 1;
+            this.mainPageButton.Text = "Main Page";
+            this.mainPageButton.UseVisualStyleBackColor = false;
+            this.mainPageButton.Click += new System.EventHandler(this.mainPageButton_Click);
+            this.mainPageButton.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPageButton_Paint);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.customTabControl1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1904, 1041);
+            this.panel1.TabIndex = 0;
+            // 
             // MainWindows
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -151,13 +137,13 @@ namespace CapakAlma
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(15, 15);
             this.Name = "MainWindows";
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainWindows_FormClosing);
             this.customTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
         }
 
@@ -167,11 +153,9 @@ namespace CapakAlma
 
         private System.Windows.Forms.Button mainPageButton;
 
-        private System.Windows.Forms.Button closeButton;
-
         private System.Windows.Forms.Panel panel2;
 
-        private CustomTabControl customTabControl1;
+        private CapakAlma.CostumComponents.CustomTabControl customTabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
 

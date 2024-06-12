@@ -1,4 +1,4 @@
-﻿namespace TeiRobotProject.Common
+﻿namespace CapakAlma.Common
 {
     public class RegisterNumbers
     {

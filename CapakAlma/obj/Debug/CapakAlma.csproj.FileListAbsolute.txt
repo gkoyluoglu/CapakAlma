@@ -41,3 +41,7 @@ C:\Users\Gurkan\RiderProjects\CapakAlma\CapakAlma\obj\Debug\CapakAlma.csproj.Up2
 C:\Users\Gurkan\RiderProjects\CapakAlma\CapakAlma\obj\Debug\CapakAlma.exe
 C:\Users\Gurkan\RiderProjects\CapakAlma\CapakAlma\obj\Debug\CapakAlma.pdb
 C:\Users\Gurkan\RiderProjects\CapakAlma\CapakAlma\obj\Debug\CapakAlma.Panels.MainPage.resources
+C:\Users\ASUS\RiderProjects\CapakAlma\CapakAlma\obj\Debug\CapakAlma.Panels.MainPage.resources
+C:\Users\ASUS\RiderProjects\CapakAlma\CapakAlma\bin\Debug\FluentFTP.dll
+C:\Users\ASUS\RiderProjects\CapakAlma\CapakAlma\bin\Debug\FluentFTP.xml
+C:\Users\ASUS\RiderProjects\CapakAlma\CapakAlma\obj\Debug\CapakAlma.Panels.RackSlotPanel.resources

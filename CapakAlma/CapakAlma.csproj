@@ -39,6 +39,9 @@
         <Reference Include="Fanuc.RobotInterface">
           <HintPath>..\..\..\Documents\TeiCapakAlmaProjesi\TeiCapakAlma\Fanuc.RobotInterface\bin\Debug\net48\Fanuc.RobotInterface.dll</HintPath>
         </Reference>
+        <Reference Include="FluentFTP, Version=50.0.1.0, Culture=neutral, PublicKeyToken=f4af092b1d8df44f, processorArchitecture=MSIL">
+          <HintPath>..\packages\FluentFTP.50.0.1\lib\net472\FluentFTP.dll</HintPath>
+        </Reference>
         <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
           <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
         </Reference>
@@ -79,6 +82,36 @@
         <Compile Include="Panels\MainPage.Designer.cs">
           <DependentUpon>MainPage.cs</DependentUpon>
         </Compile>
+        <Compile Include="Panels\MediaRack.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="Panels\MediaRack.Designer.cs">
+          <DependentUpon>MediaRack.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Panels\NewToolPage.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="Panels\NewToolPage.Designer.cs">
+          <DependentUpon>NewToolPage.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Panels\ProgramToolOptionsPage.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="Panels\ProgramToolOptionsPage.Designer.cs">
+          <DependentUpon>ProgramToolOptionsPage.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Panels\ProgramToolSelectPage.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="Panels\ProgramToolSelectPage.Designer.cs">
+          <DependentUpon>ProgramToolSelectPage.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Panels\RackSlotPanel.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="Panels\RackSlotPanel.Designer.cs">
+          <DependentUpon>RackSlotPanel.cs</DependentUpon>
+        </Compile>
         <Compile Include="PLCHaberlesme.cs" />
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
@@ -87,6 +120,9 @@
         </EmbeddedResource>
         <EmbeddedResource Include="Panels\MainPage.resx">
           <DependentUpon>MainPage.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Panels\RackSlotPanel.resx">
+          <DependentUpon>RackSlotPanel.cs</DependentUpon>
         </EmbeddedResource>
         <EmbeddedResource Include="Properties\Resources.resx">
             <Generator>ResXFileCodeGenerator</Generator>
@@ -110,6 +146,9 @@
     </ItemGroup>
     <ItemGroup>
         <None Include="App.config"/>
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="Resources\TEI_CAPAK_ALMA_2_Kamera_Kamera_4.jpg" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
 </Project>

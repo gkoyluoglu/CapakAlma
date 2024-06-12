@@ -7,6 +7,7 @@ using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapakAlma.Common;
 using TeiRobotProject.Common;
 
 namespace TeiRobotProject
@@ -46,6 +47,7 @@ namespace TeiRobotProject
                     _robot.Disconnect();
                 }
             };
+            this._robotConnectTimer.Enabled = true;
         }
 
         public static Model Instance

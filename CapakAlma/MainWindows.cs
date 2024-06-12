@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TeiRobotProject;
 
 namespace CapakAlma
 {
@@ -61,6 +62,12 @@ namespace CapakAlma
         {
             
             this.customTabControl1.SelectedIndex = 0;
+        }
+
+        private void MainWindows_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
+            PLCHaberlesme.Instance.killReadThread();
         }
     }
 }
