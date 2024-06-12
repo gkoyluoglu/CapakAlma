@@ -8,7 +8,7 @@
         <OutputType>WinExe</OutputType>
         <RootNamespace>CapakAlma</RootNamespace>
         <AssemblyName>CapakAlma</AssemblyName>
-        <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
         <Deterministic>true</Deterministic>
@@ -59,10 +59,13 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Common\ProgramData.cs" />
-        <Compile Include="Common\ProgramNamesAndrRegisterNumbers.cs" />
+        <Compile Include="Common\ProgramNames.cs" />
+        <Compile Include="Common\RegisterNumbers.cs" />
         <Compile Include="Common\Robot.cs" />
         <Compile Include="Common\Tool.cs" />
-        <Compile Include="CustomTabControl.cs" />
+        <Compile Include="CostumComponents\Constants.cs" />
+        <Compile Include="CostumComponents\CustomTabControl.cs" />
+        <Compile Include="CostumComponents\Grouper.cs" />
         <Compile Include="MainWindows.cs">
             <SubType>Form</SubType>
         </Compile>
@@ -70,11 +73,20 @@
             <DependentUpon>MainWindows.cs</DependentUpon>
         </Compile>
         <Compile Include="Model.cs" />
+        <Compile Include="Panels\MainPage.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="Panels\MainPage.Designer.cs">
+          <DependentUpon>MainPage.cs</DependentUpon>
+        </Compile>
         <Compile Include="PLCHaberlesme.cs" />
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
         <EmbeddedResource Include="MainWindows.resx">
           <DependentUpon>MainWindows.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Panels\MainPage.resx">
+          <DependentUpon>MainPage.cs</DependentUpon>
         </EmbeddedResource>
         <EmbeddedResource Include="Properties\Resources.resx">
             <Generator>ResXFileCodeGenerator</Generator>

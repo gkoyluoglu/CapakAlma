@@ -9,9 +9,15 @@ namespace TeiRobotProject.Common
     [Serializable]
     internal class Tool
     {
-        public String name { get; set; }
-        public int ID { get; set; }
+        
+        public String Name { get; set; }
+    
+        public int Id { get; set; }
+        
         public System.Drawing.Image Picture { get; set; }
+        
         public int Rpm { get; set; }
+        
+        
     }
 }

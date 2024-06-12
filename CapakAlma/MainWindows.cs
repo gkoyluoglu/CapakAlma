@@ -15,8 +15,52 @@ namespace CapakAlma
         public MainWindows()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void mainPageButton_Paint(object sender, PaintEventArgs e)
+        {
             
+            Button btn = (Button)sender;
+
+            paintBorder(btn , e);
+        }
+
+        private void defineToolPageButton_Paint(object sender, PaintEventArgs e)
+        {
+             
+            Button btn = (Button)sender;
             
+            paintBorder(btn , e);
+        }
+
+        private void paintBorder(Button btn, PaintEventArgs e)
+        {
+            
+            ControlPaint.DrawBorder(e.Graphics, btn.ClientRectangle,
+                btn.BackColor, 5, ButtonBorderStyle.Solid,
+                btn.BackColor, 5, ButtonBorderStyle.Solid,
+                btn.BackColor, 5, ButtonBorderStyle.Solid,
+                btn.BackColor, 5, ButtonBorderStyle.Solid
+            );
+        }
+
+
+        private void defineToolPageButton_Click(object sender, EventArgs e)
+        {
+
+            this.customTabControl1.SelectedIndex = 1;
+        }
+
+
+        private void mainPageButton_Click(object sender, EventArgs e)
+        {
+            
+            this.customTabControl1.SelectedIndex = 0;
         }
     }
 }

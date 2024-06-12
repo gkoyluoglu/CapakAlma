@@ -12,6 +12,7 @@ using TeiRobotProject.Common;
 
 namespace TeiRobotProject
 {
+    
     internal class PLCHaberlesme
     {
 
