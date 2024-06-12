@@ -20,5 +20,8 @@ namespace CapakAlma.Common
         public int Width { get; set; }
         
         public int PushCropPickPosition { get; set; }
+
+        public int RevulationCount { get; set; }
+
     }
 }

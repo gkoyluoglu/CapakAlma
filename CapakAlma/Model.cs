@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Net.NetworkInformation;
@@ -8,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapakAlma.Common;
+using CapakAlma.Panels;
 using TeiRobotProject.Common;
 
 namespace TeiRobotProject
@@ -24,10 +26,15 @@ namespace TeiRobotProject
         private ProgramData _programData = new ProgramData();
         private Robot _robot;
         private Timer _robotConnectTimer;
+        public List<RackSlotPanel> ToolColection { get; }
 
         public Model()
         {
+            this.ToolColection = new List<RackSlotPanel>();
+            
+            
             _robot = new Robot("192.168.1.200", 60008, 1000);
+            
             this._robotConnectTimer = new Timer();
             this._robotConnectTimer.Interval = 150;
             this._robotConnectTimer.Tick += (sender, args) =>

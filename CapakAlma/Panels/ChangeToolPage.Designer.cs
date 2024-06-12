@@ -2,7 +2,7 @@
 
 namespace CapakAlma.Panels
 {
-    partial class RackSlotPanel
+    partial class ChangeToolPage
     {
         /// <summary> 
         /// Required designer variable.
@@ -31,47 +31,55 @@ namespace CapakAlma.Panels
         /// </summary>
         private void InitializeComponent()
         {
-            this.changeMediaButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.timer1 = new System.Timers.Timer();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timer1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // changeMediaButton
-            // 
-            this.changeMediaButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.changeMediaButton.Location = new System.Drawing.Point(18, 26);
-            this.changeMediaButton.Name = "changeMediaButton";
-            this.changeMediaButton.Size = new System.Drawing.Size(97, 32);
-            this.changeMediaButton.TabIndex = 0;
-            this.changeMediaButton.Text = "p";
-            this.changeMediaButton.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Location = new System.Drawing.Point(18, 93);
+            this.pictureBox1.Location = new System.Drawing.Point(23, 91);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(115, 239);
-            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.Size = new System.Drawing.Size(530, 427);
+            this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // RackSlotPanel
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(23, 49);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 32);
+            this.comboBox1.TabIndex = 1;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.SynchronizingObject = this;
+            this.timer1.Elapsed += new System.Timers.ElapsedEventHandler(this.timer1_Elapsed);
+            // 
+            // ChangeToolPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.changeMediaButton);
-            this.Name = "RackSlotPanel";
-            this.Size = new System.Drawing.Size(148, 357);
+            this.Name = "ChangeToolPage";
+            this.Size = new System.Drawing.Size(1918, 1078);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timer1)).EndInit();
             this.ResumeLayout(false);
         }
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Timers.Timer timer1;
 
-        private System.Windows.Forms.Button changeMediaButton;
+        private System.Windows.Forms.ComboBox comboBox1;
+
+        private System.Windows.Forms.PictureBox pictureBox1;
 
         #endregion
     }
